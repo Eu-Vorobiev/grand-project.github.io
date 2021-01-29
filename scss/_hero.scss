@@ -1,0 +1,33 @@
+.hero {
+  background-color: $lightGrey;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    color: $black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+  }
+  &__text {
+    margin: 0;
+    max-width: 635px;
+    color: $black;
+    opacity: 0.6;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+

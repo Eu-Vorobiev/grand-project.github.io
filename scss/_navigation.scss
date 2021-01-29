@@ -1,0 +1,26 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-left: 44px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    transition: all .2s ease-in-out;
+    outline-color: transparent;
+  
+    &:hover,
+    &:focus {
+      color: $green;
+      outline-color: $green;
+    }
+  }
+}

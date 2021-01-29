@@ -1,0 +1,31 @@
+.header {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__logo {
+    width: 47px;
+    height: 48px;
+    transition: opacity .2s linear;
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+  }
+  &__btn {
+    transition: all .3s ease-in-out;
+    &:hover, 
+    &:focus {
+      color: $green;
+      border: 2px solid $green;
+      outline: $green;
+    }
+  }
+}

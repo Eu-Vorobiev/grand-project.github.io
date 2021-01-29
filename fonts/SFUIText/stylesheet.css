@@ -1,0 +1,83 @@
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-RegularItalic.eot');
+    src: local('SF UI Text Regular Italic'), local('SFUIText-RegularItalic'),
+        url('SFUIText-RegularItalic.woff2') format('woff2'),
+        url('SFUIText-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-SemiboldItalic.eot');
+    src: local('SF UI Text SemiboldItalic'), local('SFUIText-SemiboldItalic'),
+        url('SFUIText-SemiboldItalic.woff2') format('woff2'),
+        url('SFUIText-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Semibold.eot');
+    src: local('SF UI Text Semibold'), local('SFUIText-Semibold'),
+        url('SFUIText-Semibold.woff2') format('woff2'),
+        url('SFUIText-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Medium.eot');
+    src: local('SF UI Text Medium'), local('SFUIText-Medium'),
+        url('SFUIText-Medium.woff2') format('woff2'),
+        url('SFUIText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Regular.eot');
+    src: local('SF UI Text Regular'), local('SFUIText-Regular'),
+        url('SFUIText-Regular.woff2') format('woff2'),
+        url('SFUIText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-BoldItalic.eot');
+    src: local('SF UI Text BoldItalic'), local('SFUIText-BoldItalic'),
+        url('SFUIText-BoldItalic.woff2') format('woff2'),
+        url('SFUIText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Bold.eot');
+    src: local('SF UI Text Bold'), local('SFUIText-Bold'),
+        url('SFUIText-Bold.woff2') format('woff2'),
+        url('SFUIText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-MediumItalic.eot');
+    src: local('SF UI Text MediumItalic'), local('SFUIText-MediumItalic'),
+        url('SFUIText-MediumItalic.woff2') format('woff2'),
+        url('SFUIText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+

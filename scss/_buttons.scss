@@ -1,0 +1,33 @@
+/* Кнопки */
+.btn {
+  display: inline-block;
+  border: 2px solid $black;
+  border-radius: 8px;
+  background: transparent;
+  color: $black;
+  font-weight: 700;
+  font-size: 13px;
+  /* Цвета кнопки */
+  &--black {
+    background-color: $black;
+    color: $white;
+  }
+  &--green {
+    background-color: $green;
+    color: $white;
+    border: 2px solid $green;
+  }
+
+  /* Размеры */
+  &--default {
+    padding: 13px 22px;
+  }
+  &--sm {
+    padding: 13px 15px;
+  }
+  /* Кнопка-ссылка */
+  &--link {
+    border: 1px solid $black;
+    padding: 13px 22px;
+  }
+}

@@ -1,0 +1,98 @@
+.about-us {
+  padding: 60px 0px 50px;
+  &__wrap {
+    margin: 90px 0 135px;
+    display: grid;
+    gap: 0px 65px;
+    grid-template-columns: repeat(4, 1fr);
+    /* на адаптиве дать overflow-x: scroll + flex-shrink 0 item'ам*/
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: $lightGrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 33px;
+  }
+  &__icon {
+    width: auto;
+    height: auto;
+  }
+  &__heading {
+    margin: 0;
+    margin-bottom: 25px;
+    color: $green;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__text {
+    margin: 0;
+    color: $black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    transition: all .3s ease-in-out;
+    &:hover, 
+    &:focus {
+      color: $green;
+      border: 1px solid $green;
+      outline: $green;
+    }
+  }
+  &__btn {
+    transition: all .3s ease-in-out;
+    &:hover, 
+    &:focus {
+      background-color: lighten($green, 10%);
+      border: 2px solid lighten($green, 10%);
+      outline: lighten($green, 10%);
+    }
+  }
+  &__divider {
+    margin: 0px 45px;
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    color: #ADB3CB;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 1px;
+      background-color: #DAE4FE;
+    }
+    &::before {
+      left: -30px;
+    }
+    &::after {
+      right: -30px;
+    }
+  }
+}
