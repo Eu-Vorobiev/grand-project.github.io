@@ -26,9 +26,9 @@
     &:hover, 
     &:focus {
       color: $white;
-      background-color: $green;
-      border: 2px solid $green;
-      outline: $green;
+      background-color: $accent;
+      border: 2px solid $accent;
+      outline: $accent;
     }
   }
 }

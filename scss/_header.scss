@@ -14,9 +14,9 @@
     transition: all .3s ease-in-out;
     &:hover, 
     &:focus {
-      color: $green;
-      border: 2px solid $green;
-      outline: $green;
+      color: $accent;
+      border: 2px solid $accent;
+      outline: $accent;
     }
   }
 }

@@ -1,6 +1,6 @@
 .prices {
   padding: 40px 0;
-  background-color: $green;
+  background-color: $accent;
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
   &__btn {
     background: $white;
     border-radius: 2px;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     outline-color: transparent;
     padding: 13px 18px;
     font-family: $quicksand;
@@ -42,9 +42,8 @@
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
-      color: $white;
-      background-color: lighten($green, 10%);
-      outline-color: lighten($green, 10%);
+      border: 3px solid darken($accent, 10%);
+      outline-color: darken($accent, 10%);
     }
   }
 }

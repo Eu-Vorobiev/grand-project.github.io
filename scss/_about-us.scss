@@ -30,7 +30,7 @@
   &__heading {
     margin: 0;
     margin-bottom: 25px;
-    color: $green;
+    color: $accent;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -55,18 +55,18 @@
     transition: all .3s ease-in-out;
     &:hover, 
     &:focus {
-      color: $green;
-      border: 1px solid $green;
-      outline: $green;
+      color: $accent;
+      border: 1px solid $accent;
+      outline: $accent;
     }
   }
   &__btn {
     transition: all .3s ease-in-out;
     &:hover, 
     &:focus {
-      background-color: lighten($green, 10%);
-      border: 2px solid lighten($green, 10%);
-      outline: lighten($green, 10%);
+      background-color: lighten($accent, 10%);
+      border: 2px solid lighten($accent, 10%);
+      outline: lighten($accent, 10%);
     }
   }
   &__divider {
