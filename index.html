@@ -20,13 +20,13 @@
     <div class="container">
       <div class="header__wrap">
         <div class="header__inner">
-          <a class="header__logo" href="index.html" target="_blank">
-            <img class="header__logo-img" src="img/logo.svg" alt="Logo-icon">
+          <a class="logo" href="index.html">
+            <img class="logo-img" src="img/logo.svg" alt="Logo-icon">
           </a>
           <nav class="navigation header__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link"href="#">Главная</a>
+                <a class="nav__link" href="#">Главная</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Курсы</a>
@@ -40,7 +40,7 @@
             </ul>
           </nav>
         </div>
-  
+
         <!-- <nav class="mobile-navigation">
           <ul class="mobile-nav__list animate__animated animate__animate__backInDown">
             <li class="mobile-nav__item">
@@ -57,28 +57,39 @@
             </li>
           </ul>
         </nav> -->
-  
+
         <!-- <button class="burger" type="button">Menu</button> -->
-  
+
         <button class="btn btn--sm header__btn" type="button">Личный кабинет</button>
       </div>
     </div>
-  </header>  <!-- /.Header-->
+  </header> <!-- /.Header-->
 
-  <main> <!-- Main -->
+  <!-- Main -->
+  <main>
 
-    <section class="hero">  <!-- Hero -->
+     <!-- Hero -->
+    <section class="hero  border--bottom">
       <div class="container">
         <div class="hero__wrap">
           <div class="container--sm">
             <h1 class="hero__title">Только качественные курсы</h1>
-            <p class="hero__text">На нашем сайте собраны лучшие курсы на разные темы. Курсы программирования, продвижения, SMM, языковые курсы. Это малая часть того, что есть в нашей базе</p>
+            <p class="hero__text">На нашем сайте собраны лучшие курсы на разные темы. Курсы программирования,
+              продвижения, SMM, языковые курсы. Это малая часть того, что есть в нашей базе</p>
           </div>
         </div>
       </div>
-    </section>  <!-- /.Hero -->
+    </section> <!-- /.Hero -->
 
-    <section class="about-us">  <!-- About us-->
+    <!-- About us-->
+    <section class="about-us  border--bottom"> 
+
+      <!-- Декор элементы-->
+      <img class="clouds--sm" src="img/clouds-sm.svg" alt="Clouds">
+      <img class="clouds--md" src="img/clouds-md.svg" alt="Clouds">
+      <img class="clouds--lg" src="img/clouds-lg.svg" alt="Clouds">
+      <!-- /. Декор элементы -->
+
       <div class="container--sm">
 
         <div class="section__heading">
@@ -86,7 +97,8 @@
           <h3 class="section__title section__title--black section__title--default">Только факты</h3>
         </div>
 
-        <div class="about-us__wrap">  <!-- About us Wrap-->
+        <div class="about-us__wrap">
+          <!-- About us Wrap-->
           <div class="about-us__item">
             <div class="about-us__img">
               <img class="about-us__icon" src="img/time.svg" alt="Time image">
@@ -115,7 +127,7 @@
             <h5 class="about-us__heading">Студенты</h5>
             <p class="about-us__text">6000+ студентов, которые получили дополнительный навык</p>
           </div>
-        </div>  <!-- /.About us Wrap-->
+        </div> <!-- /.About us Wrap-->
 
         <div class="about-us__actions">
           <a class="about-us__link btn btn--link" href="#">Больше фактов</a>
@@ -124,11 +136,142 @@
         </div>
 
       </div>
-    </section>  <!-- /.About us-->
+    </section> <!-- /.About us-->
 
-  </main>  <!-- /.Main -->
+    <!-- Info-->
+    <div class="info  border--bottom">
+      <div class="info__courses">
+        <div class="container--sm">
+          <div class="info__item">
+            <img class="info__img" src="img/speed.svg" alt="Speed image">
+            <span class="info__num">97%</span>
+            <p class="info__text">Успешно пройденных курсов</p>
+          </div>
+        </div>
+      </div>
+      <div class="info__lectors">
+        <div class="container--sm">
+          <div class="info__item info__item--revert">
+            <img class="info__img" src="img/users.svg" alt="Users image">
+            <span class="info__num">250</span>
+            <p class="info__text info__text--revert">Преподавателей</p>
+          </div>
+        </div>
+      </div>
+    </div>  <!-- /. Info-->
 
-  <footer class="footer"></footer>
+    <!-- Reviews-->
+    <section class="reviews  border--bottom"> <!-- Reviews-->
+      <div class="container container--no-padding">
+
+        <div class="reviews__wrap">  <!-- Reviews Wrap -->
+          <div class="section__heading reviews__heading">
+            <h4 class="section__suptitle section__suptitle--blue section__suptitle--m-lg">Отзывы</h4>
+            <h3 class="section__title section__title--blue section__title--lg">Что говорят студенты</h3>
+          </div>
+  
+          <div class="slider__wrap">  <!-- Slider -->
+            <div class="slider__item  current">
+              <p class="slider__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+              </p>
+              <img class="slider__author" src="img/user-photo.jpg" alt="Author photo">
+            </div>
+            <div class="slider__item">
+              <p class="slider__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+              </p>
+              <img class="slider__author" src="img/user-photo.jpg" alt="Author photo">
+            </div>
+
+            <!-- ДОБАВИТЬ ТОЧКИ -->
+          </div>  <!-- /. Slider-->
+        </div> <!-- /. Reviews Wrap -->
+
+      </div>  
+    </section>  <!-- /. Reviews -->
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container--sm">
+
+        <div class="section__heading faq-section__heading">
+          <h4 class="section__suptitle section__suptitle--blue">FAQ</h4>
+          <h3 class="section__title section__title--blue section__title--default">Список популярных вопросов</h3>
+        </div>
+
+        <div class="accordion__wrap"> <!-- Accordion -->  <!-- Написать скрипт аккордеона + при активном пунтке менять стрелку вниз трансформом -->
+          <div class="accordion__item">
+            <div class="accordion__header">Вопрос номер 1</div>
+            <p class="accordion__content">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+            </p>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header accordion__header--active">Вопрос номер 2</div>
+            <p class="accordion__content accordion__content--visible">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+            </p>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">Вопрос номер 3</div>
+            <p class="accordion__content">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+            </p>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">Вопрос номер 4</div>
+            <p class="accordion__content">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+            </p>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">Вопрос номер 5</div>
+            <p class="accordion__content accordion__content--visible">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+            </p>
+          </div>
+        </div>  <!-- /. Accordion -->
+
+      </div>
+    </section> <!-- /. FAQ -->
+
+    <!-- Prices -->
+    <section class="prices">
+      <div class="container--sm">
+        <div class="prices__wrap">
+          <h2 class="prices__title">Самые вкусные тарифы</h2>
+          <p class="prices__text">Предлагаем вам ознакомиться со списком тарифным планов</p>
+          <a class="prices__btn btn" href="#">Перейти к тарифам</a>
+        </div>
+      </div>
+    </section> <!-- /. Prices -->
+
+  </main> <!-- /.Main -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">   <!-- Footer Wrap-->
+        <div class="footer__inner">
+          <a class="logo" href="index.html">
+            <img class="logo-img" src="img/logo.svg" alt="Logo-icon">
+          </a>
+          <nav class="navigation header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Курсы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Прайс</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">О нас</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="btn btn--sm btn--black footer__btn" type="button">Личный кабинет</button>
+      </div>  <!-- /. Footer Wrap-->
+      <div class="footer__copyright">Copyright © 2018 by Random site</div>
+    </div>
+  </footer> <!-- /. Footer-->
 
   <script src="js/main-page.js"></script>
 </body>

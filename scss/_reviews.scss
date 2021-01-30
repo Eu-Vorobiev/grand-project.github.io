@@ -1,0 +1,15 @@
+.reviews {
+  padding: 110px 0px;
+  background-color: $lightGrey;
+  overflow: hidden;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__heading {
+    margin-right: 110px;
+    padding-left: 160px;
+    flex-shrink: 0;
+  }
+}

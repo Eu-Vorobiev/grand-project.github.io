@@ -1,5 +1,6 @@
 .about-us {
   padding: 60px 0px 50px;
+  position: relative;
   &__wrap {
     margin: 90px 0 135px;
     display: grid;
@@ -95,4 +96,23 @@
       right: -30px;
     }
   }
+}
+
+/* Декор элементы */
+.clouds--sm,
+.clouds--md,
+.clouds--lg {
+  position: absolute;
+}
+.clouds--sm {
+  top: 21px;
+  left: 125px;
+}
+.clouds--md {
+  left: 56px;
+  bottom: 40px;
+}
+.clouds--lg {
+  top: 60px;
+  right: 70px;
 }
