@@ -32,3 +32,12 @@
     }
   }
 }
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .footer__wrap {
+    padding: 60px 0px 25px;
+  }
+  .footer__copyright {
+    margin: 0px 0px 40px 70px;
+  }
+}

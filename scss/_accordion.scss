@@ -72,3 +72,11 @@
     transition: all .3s ease-in-out;
   }
 }
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .accordion {
+    &__content {
+      max-width: 470px;
+    }
+  }
+}

@@ -13,3 +13,13 @@
     flex-shrink: 0;
   }
 }
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .reviews {
+    padding: 80px 0;
+    &__heading {
+      margin-right: 90px;
+      padding-left: 90px;
+    }
+  }
+}

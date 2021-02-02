@@ -11,8 +11,9 @@
     padding: 40px 70px 50px;
     opacity: 0.5;
     position: relative;
-    &:not(:last-child) {
-      margin-right: 60px;
+    margin-right: 60px;
+    &:last-child {
+      margin-right: 0px;
     }
   }
   &__text {

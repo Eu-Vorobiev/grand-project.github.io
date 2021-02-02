@@ -24,3 +24,9 @@
     }
   }
 }
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .nav__item {
+    margin-left: 24px;
+  }
+}

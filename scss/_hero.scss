@@ -31,3 +31,13 @@
   }
 }
 
+@media (max-width: 767px) and (min-width: 576px) {
+  .hero__wrap {
+    padding: 90px 0px;
+  }
+  .hero__title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+}
+

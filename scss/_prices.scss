@@ -1,11 +1,13 @@
 .prices {
   padding: 40px 0;
   background-color: $accent;
+
   &__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   &__title {
     margin: 0;
     margin-bottom: 28px;
@@ -16,6 +18,7 @@
     line-height: 60px;
     color: #FFFFFF;
   }
+
   &__text {
     margin: 0;
     margin-bottom: 70px;
@@ -27,6 +30,7 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
   }
+
   &__btn {
     background: $white;
     border-radius: 2px;
@@ -40,10 +44,23 @@
     line-height: 16px;
     color: #565F82;
     transition: all .2s ease-in-out;
+
     &:hover,
     &:focus {
       border: 3px solid darken($accent, 10%);
       outline-color: darken($accent, 10%);
+    }
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .prices {
+    &__title {
+      font-size: 38px;
+      line-height: 44px;
+    }
+    &__text {
+      margin-bottom: 50px;
     }
   }
 }
