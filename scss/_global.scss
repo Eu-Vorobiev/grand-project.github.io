@@ -39,8 +39,9 @@ a {
   margin: 0 auto;
   &--sm {
     width: 100%;
-    max-width: 760px;
+    max-width: 790px;
     margin: 0 auto;
+    padding: 0px 15px;
   }
   &--no-padding {
     padding: 0;
@@ -55,6 +56,9 @@ a {
   width: 47px;
   height: 48px;
   transition: opacity .2s linear;
+  &--white {
+    margin-bottom: 35px;
+  }
   &:hover,
   &:focus {
     opacity: .7;

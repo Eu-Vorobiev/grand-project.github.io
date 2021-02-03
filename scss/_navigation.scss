@@ -1,4 +1,5 @@
 .nav {
+
   &__list {
     display: flex;
     align-items: center;
@@ -25,8 +26,98 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 576px) {
+.mobile-nav {
+  padding: 15px;
+  background-color: $black;
+  display: none;
+  &--active {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    color: $white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+    transition: all .2s ease-in-out;
+    outline-color: transparent;
+    &:hover,
+    &:focus {
+      color: $accent;
+      outline-color: $accent;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  border: none;
+  background-color: $accent;
+  font-size: 0;
+  width: 30px;
+  height: 2px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  position: relative;
+  &:hover {
+    opacity: 0.7;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $accent;
+    width: 13px;
+    height: 2px;
+    top: -5px;
+    right: 0;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $accent;
+    width: 13px;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
   .nav__item {
     margin-left: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .navigation {
+    display: none;
+    &--footer {
+      display: flex;
+    }
+  }
+  .nav {
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      margin-left: 0;
+      margin-bottom: 10px;
+      padding: 0px 20px;
+    }
+  }
+  .burger {
+    display: block;
   }
 }

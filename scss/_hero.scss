@@ -32,12 +32,26 @@
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
-  .hero__wrap {
+  .hero {
+    &__wrap {
     padding: 90px 0px;
+    }
+    &__title {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
   }
-  .hero__title {
-    font-size: 42px;
-    margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  .hero {
+    &__wrap {
+      padding: 70px 0;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 48px;
+    }
   }
 }
 

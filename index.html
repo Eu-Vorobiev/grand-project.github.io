@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Big Project. Team 4</title>
+
+  <link rel="stylesheet" type="text/css" href="fonts/SFUIText/stylesheet.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="fonts/SFUIText/stylesheet.css">
-
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,12 +22,13 @@
       <div class="header__wrap">
         <div class="header__inner">
           <a class="logo" href="index.html">
-            <img class="logo-img" src="img/logo.svg" alt="Logo-icon">
+            <img class="logo__img" src="img/logo.svg" alt="Logo image">
           </a>
+
           <nav class="navigation header__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#">Главная</a>
+                <a class="nav__link" href="index.html">Главная</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Курсы</a>
@@ -40,28 +41,31 @@
               </li>
             </ul>
           </nav>
+
+          <nav class="mobile-nav">
+            <a class="logo logo--white" href="index.html">
+              <img class="logo__img" src="img/logo--white.svg" alt="Logo image">
+            </a>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#">Курсы</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#">Прайс</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#">О нас</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <!-- <nav class="mobile-navigation">
-          <ul class="mobile-nav__list animate__animated animate__animate__backInDown">
-            <li class="mobile-nav__item">
-              <a class="nav__link" href="#">Главная</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="nav__link" href="#">Курсы</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="nav__link" href="#">Прайс</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="nav__link" href="#">О нас</a>
-            </li>
-          </ul>
-        </nav> -->
-
-        <!-- <button class="burger" type="button">Menu</button> -->
-
         <button class="btn btn--sm header__btn" type="button">Личный кабинет</button>
+
+        <button class="burger" type="button">Menu</button>
       </div>
     </div>
   </header> <!-- /.Header-->
@@ -187,9 +191,9 @@
               <img class="slider__author" src="img/user-photo.jpg" alt="Author photo">
             </div> -->
 
-            <!-- ДОБАВИТЬ ТОЧКИ -->
-          </div> <!-- /. Slider-->
-        </div> <!-- /. Reviews Wrap -->
+          <!-- ДОБАВИТЬ ТОЧКИ -->
+        </div> <!-- /. Slider-->
+      </div> <!-- /. Reviews Wrap -->
 
       </div>
     </section> <!-- /. Reviews -->
@@ -264,7 +268,7 @@
           <a class="logo" href="index.html">
             <img class="logo-img" src="img/logo.svg" alt="Logo-icon">
           </a>
-          <nav class="navigation header__nav">
+          <nav class="navigation navigation--footer">
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="#">Главная</a>

@@ -62,6 +62,7 @@
     margin: 0;
     margin-left: 75px;
     padding-bottom: 0px;
+    padding-right: 15px;
     max-width: 380px;
     font-style: normal;
     font-weight: normal;
@@ -73,10 +74,30 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 576px) {
+@media (max-width: 767px) {
   .accordion {
+    &__item {
+      &--show {
+        .accordion__content {
+          padding-bottom: 20px;
+        }
+      } 
+    }
     &__content {
       max-width: 470px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .accordion {
+    &__item {
+      &--show {
+        .accordion__content {
+          font-size: 13px;
+          line-height: 23px;
+        }
+      } 
     }
   }
 }
