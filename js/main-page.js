@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  /* Scroll Out */
-  ScrollOut({
-    once: true
-  });
   
   /* Accordion */
   let accordHeader = document.querySelectorAll(".accordion__header");
@@ -25,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   btnClose.addEventListener("click", () => {
     burgerMenu.classList.remove("burger__menu--active");
+  });
+  
+  /* Scroll Out */
+  ScrollOut({
+    once: true
   });
 });
 
