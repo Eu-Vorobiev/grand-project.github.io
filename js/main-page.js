@@ -23,10 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     burgerMenu.classList.remove("burger__menu--active");
   });
   
-  /* Scroll Out */
-  ScrollOut({
-    once: true
-  });
+
 });
 
 // $(document).ready(function () {
