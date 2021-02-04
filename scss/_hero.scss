@@ -16,6 +16,9 @@
     font-size: 48px;
     line-height: 57px;
     text-align: center;
+    overflow: hidden;
+    transform: all .3s ease-in-out;
+    animation: Scale 1s ease-in-out .5s normal forwards;
   }
   &__text {
     margin: 0 auto;
@@ -55,3 +58,15 @@
   }
 }
 
+
+@keyframes Scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet" />
 
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <!-- Scroll out  -->
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,30 +45,35 @@
             </ul>
           </nav>
 
-          <nav class="mobile-nav">
-            <a class="logo logo--white" href="index.html">
-              <img class="logo__img" src="img/logo--white.svg" alt="Logo image">
-            </a>
-            <ul class="mobile-nav__list">
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="#">Курсы</a>
-              </li>
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="#">Прайс</a>
-              </li>
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="#">О нас</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="burger__menu">
+            <nav class="mobile-nav">
+              <a class="logo" href="index.html">
+                <img class="logo__img logo--white" src="img/logo--white.svg" alt="Logo image">
+              </a>
+              <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link" href="#">Курсы</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link" href="#">Прайс</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link" href="#">О нас</a>
+                </li>
+              </ul>
+              <img class="close" src="img/close.svg" alt="Close">
+            </nav>
+          </div>
         </div>
 
         <button class="btn btn--sm header__btn" type="button">Личный кабинет</button>
 
-        <button class="burger" type="button">Menu</button>
+        <button class="burger" type="button">
+          <span class="burger__item">Menu</span>
+        </button>
       </div>
     </div>
   </header> <!-- /.Header-->
@@ -90,9 +98,9 @@
     <section class="about-us  border--bottom">
 
       <!-- Декор элементы-->
-      <img class="clouds--sm" src="img/clouds-sm.svg" alt="Clouds">
-      <img class="clouds--md" src="img/clouds-md.svg" alt="Clouds">
-      <img class="clouds--lg" src="img/clouds-lg.svg" alt="Clouds">
+      <img class="clouds--sm" src="img/clouds-sm.svg" alt="Clouds" data-scroll>
+      <img class="clouds--md" src="img/clouds-md.svg" alt="Clouds" data-scroll>
+      <img class="clouds--lg" src="img/clouds-lg.svg" alt="Clouds" data-scroll>
       <!-- /. Декор элементы -->
 
       <div class="container--sm">
@@ -147,7 +155,7 @@
     <div class="info  border--bottom">
       <div class="info__courses">
         <div class="container--sm">
-          <div class="info__item">
+          <div class="info__item" data-scroll>
             <img class="info__img" src="img/speed.svg" alt="Speed image">
             <span class="info__num">97%</span>
             <p class="info__text">Успешно пройденных курсов</p>
@@ -156,7 +164,7 @@
       </div>
       <div class="info__lectors">
         <div class="container--sm">
-          <div class="info__item info__item--revert">
+          <div class="info__item info__item--revert" data-scroll>
             <img class="info__img" src="img/users.svg" alt="Users image">
             <span class="info__num">250</span>
             <p class="info__text info__text--revert">Преподавателей</p>
@@ -250,7 +258,7 @@
     <section class="prices">
       <div class="container--sm">
         <div class="prices__wrap">
-          <h2 class="prices__title">Самые вкусные тарифы</h2>
+          <h2 class="prices__title" data-scroll>Самые вкусные тарифы</h2>
           <p class="prices__text">Предлагаем вам ознакомиться со списком тарифным планов</p>
           <a class="prices__btn btn" href="#">Перейти к тарифам</a>
         </div>
@@ -264,7 +272,7 @@
     <div class="container">
       <div class="footer__wrap">
         <!-- Footer Wrap-->
-        <div class="footer__inner">
+        <div class="footer__inner" data-scroll>
           <a class="logo" href="index.html">
             <img class="logo-img" src="img/logo.svg" alt="Logo-icon">
           </a>
@@ -285,9 +293,9 @@
             </ul>
           </nav>
         </div>
-        <button class="btn btn--sm btn--black footer__btn" type="button">Личный кабинет</button>
+        <button class="btn btn--sm btn--black footer__btn" type="button" data-scroll>Личный кабинет</button>
       </div> <!-- /. Footer Wrap-->
-      <div class="footer__copyright">Copyright © 2018 by Random site</div>
+      <div class="footer__copyright" data-scroll>Copyright © 2018 by Random site</div>
     </div>
   </footer> <!-- /. Footer-->
 

@@ -79,3 +79,15 @@
     }
   }
 }
+
+/* Animation */
+.prices__title[data-scroll] {
+  transition: all .3s ease-in-out;
+  transition-delay: .5s;
+}
+.prices__title[data-scroll="in"] {
+  transform: scale(1);
+}
+.prices__title[data-scroll="out"] {
+  transform: scale(.9);
+}

@@ -29,11 +29,8 @@
 .mobile-nav {
   padding: 15px;
   background-color: $black;
-  display: none;
-  &--active {
-    display: flex;
-    flex-direction: column;
-  }
+  position: relative;
+  transition: all .7s ease-in-out;
   &__list {
     width: 100vw;
     display: flex;
@@ -42,7 +39,7 @@
   &__item {
     margin-bottom: 50px;
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 25px;
     }
   }
   &__link {
@@ -61,36 +58,72 @@
   }
 }
 
-.burger {
-  display: none;
-  border: none;
-  background-color: $accent;
-  font-size: 0;
-  width: 30px;
-  height: 2px;
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 20;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
   cursor: pointer;
   transition: all .3s ease-in-out;
-  position: relative;
+  &:hover,
+  &:focus {
+    transform: rotate(45deg);
+  }
+}
+
+.burger {
+  display: none;
+  padding: 9px 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &__item {
+    display: inherit;
+    background-color: $accent;
+    color: transparent;
+    font-size: 0;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $accent;
+      width: 13px;
+      height: 2px;
+      top: -5px;
+      right: 0;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $accent;
+      width: 13px;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+    }
+
+  }
   &:hover {
     opacity: 0.7;
   }
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: $accent;
-    width: 13px;
-    height: 2px;
-    top: -5px;
+}
+
+.burger__menu {
+  display: none;
+  transition: all .7s ease-in-out;
+  &--active {
+    display: block;
+    position: fixed;
+    top: 0;
     right: 0;
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    background-color: $accent;
-    width: 13px;
-    height: 2px;
-    bottom: -5px;
     left: 0;
+    z-index: 10;
   }
 }
 
@@ -106,17 +139,7 @@
       display: flex;
     }
   }
-  .nav {
-    &__list {
-      display: flex;
-      flex-direction: column;
-    }
-    &__item {
-      margin-left: 0;
-      margin-bottom: 10px;
-      padding: 0px 20px;
-    }
-  }
+  
   .burger {
     display: block;
   }

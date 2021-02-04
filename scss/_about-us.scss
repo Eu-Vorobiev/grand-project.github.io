@@ -218,3 +218,35 @@
     right: 0;
   }
 }
+
+/* Animation */
+.clouds--sm[data-scroll] {
+  transition: all .3s ease-in-out;
+  transition-delay: .5s;
+}
+.clouds--sm[data-scroll="in"] {
+  opacity: 1;
+}
+.clouds--sm[data-scroll="out"] {
+  opacity: 0;
+}
+.clouds--lg[data-scroll] {
+  transition: all .3s ease-in-out;
+  transition-delay: 1s;
+}
+.clouds--lg[data-scroll="in"] {
+  opacity: 1;
+}
+.clouds--lg[data-scroll="out"] {
+  opacity: 0;
+}
+.clouds--md[data-scroll] {
+  transition: all .3s ease-in-out;
+  transition-delay: 2s;
+}
+.clouds--lg[data-scroll="in"] {
+  opacity: 1;
+}
+.clouds--lg[data-scroll="out"] {
+  opacity: 0;
+}
