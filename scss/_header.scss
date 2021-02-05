@@ -1,4 +1,17 @@
 .header {
+  transition: all .5s ease-in-out;
+  &--fixed {
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    opacity: .9;
+  }
+  &--fixed .header__wrap {
+    padding: 3px 0px;
+  }
   &__wrap {
     display: flex;
     align-items: center;
