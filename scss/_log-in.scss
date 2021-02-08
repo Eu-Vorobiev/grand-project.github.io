@@ -1,0 +1,77 @@
+.log-in {
+  &__wrapper {
+    max-width: 400px;
+    min-height: 30vh;
+    margin: 100px auto 0;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid $black;
+    border-radius: 8px;
+    background-color: $lightGrey;
+    position: relative;
+    transition: border .3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid $accent;
+    }
+  }
+  &__tabs {
+    display: flex;
+    justify-content: center;
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    margin: 15px 0px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $accent;
+      border: 2px solid $accent;
+      outline-color: $accent
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 310px;
+  padding: 25px 40px;
+  color: darken($accent, 5%);
+  background-color: $white;
+  border-radius: 8px;
+  border: 2px solid darken($accent, 5%);
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+  display: none;
+  &--visible {
+    display: block;
+  }
+}
+
+@media (max-width:575px) {
+  .log-in {
+    &__wrapper {
+      margin-top: 50px;
+    }
+  }
+}

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Big Project. Team 4</title>
 
-  <link rel="preconnect" href="fonts/SFUIText/stylesheet.css" as="style">
+  <link rel="stylesheet" href="fonts/SFUIText/stylesheet.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet" />
 
@@ -69,7 +69,7 @@
           </div>
         </div>
 
-        <button class="btn btn--sm header__btn" type="button">Личный кабинет</button>
+        <a class="btn btn--sm header__btn" href="log-in.html">Личный кабинет</a>
 
         <button class="burger" type="button">
           <span class="burger__item">Menu</span>
@@ -110,7 +110,7 @@
           <h3 class="section__title section__title--black section__title--default">Только факты</h3>
         </div>
 
-        <div class="about-us__wrap">
+        <div class="about-us__wrap" data-scroll>
           <!-- About us Wrap-->
           <div class="about-us__item">
             <div class="about-us__img">
@@ -145,7 +145,7 @@
         <div class="about-us__actions">
           <a class="about-us__link btn btn--link" href="#">Больше фактов</a>
           <span class="about-us__divider">или</span>
-          <button class="about-us__btn btn btn--default btn--green">Присоединиться</button>
+          <a class="about-us__btn btn btn--default btn--green" href="log-in.html">Присоединиться</a>
         </div>
 
       </div>
@@ -274,7 +274,7 @@
         <!-- Footer Wrap-->
         <div class="footer__inner" data-scroll>
           <a class="logo" href="index.html">
-            <img class="logo-img" src="img/logo.svg" alt="Logo-icon">
+            <img class="logo__img" src="img/logo.svg" alt="Logo-icon">
           </a>
           <nav class="navigation navigation--footer">
             <ul class="nav__list">
@@ -293,7 +293,7 @@
             </ul>
           </nav>
         </div>
-        <button class="btn btn--sm btn--black footer__btn" type="button" data-scroll>Личный кабинет</button>
+        <a class="btn btn--sm btn--black footer__btn" href="log-in.html" data-scroll>Личный кабинет</a>
       </div> <!-- /. Footer Wrap-->
       <div class="footer__copyright" data-scroll>Copyright © 2018 by Random site</div>
     </div>

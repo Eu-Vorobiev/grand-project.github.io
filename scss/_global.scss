@@ -63,10 +63,16 @@ a {
   &--white {
     margin-bottom: 35px;
   }
-  &:hover,
-  &:focus {
-    opacity: .7;
+  &__img {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }    
   }
+}
+
+.js-validate-error-label {
+  color: darken(red, 15%);
 }
 
 .section__title {

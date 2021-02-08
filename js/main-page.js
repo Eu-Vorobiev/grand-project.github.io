@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
     burgerMenu.classList.remove("burger__menu--active");
   });
 
-
 });
 
 // $(document).ready(function () {

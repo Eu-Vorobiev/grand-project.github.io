@@ -6,7 +6,7 @@
     display: grid;
     gap: 0px 65px;
     grid-template-columns: repeat(4, 1fr);
-    /* на адаптиве дать overflow-x: scroll + flex-shrink 0 item'ам*/
+    transition: all .3s ease-in-out;
   }
   &__item {
     display: flex;
@@ -221,6 +221,34 @@
 }
 
 /* Animation */
+@keyframes aboutScrollX {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.about-us__wrap[data-scroll] {
+  transition: all .3s ease-in-out;
+  transition-delay: .7s;
+}
+.about-us__wrap[data-scroll="in"] {
+  animation: aboutScrollX 1s ease-in-out normal forwards;
+}
+.about-us__wrap[data-scroll="out"] {
+  animation: none;
+}
 .clouds--sm[data-scroll] {
   transition: all .3s ease-in-out;
   transition-delay: .5s;

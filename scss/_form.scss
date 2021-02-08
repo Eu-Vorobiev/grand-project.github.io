@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    margin-bottom: 10px;
+    color: $black;
+    font-weight: 600;
+  }
+  &__input {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    outline: $black solid 1px;
+    color: $black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    transition: all .3s ease-in-out;
+    &::placeholder {
+      color: lighten($black, 10%);
+    }
+    &:hover, &:focus {
+      border: 1px solid $accent;
+      outline: $accent solid 1px;
+    }
+  }
+}
