@@ -28,8 +28,34 @@ document.addEventListener("DOMContentLoaded", function () {
     tabContent[tabindex - 1].classList.remove("hidden");
   }
 
-  /* Validation Form */
-  new JustValidate('.form', {
+  /* Validation Form--Enter*/
+  new JustValidate('.form--enter', {
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+      password: {
+        required: true,
+        password: true,
+        minLength: 8
+      },
+    },
+    messages: {
+      email: {
+        email: 'Ваш email введен некорректно. Пожалуйста, проверьте правильность ввода',
+        required: 'Пожалуйста, введите Ваш email'
+      },
+      password: {
+        required: 'Вам необходимо ввести пароль',
+        password: 'Пароль должен содержать как минимум 1 цифру и 1 букву',
+        minLength: 'Минимальная длина пароля = 8 символов'
+      },
+    },
+  });
+
+  /* Validation Form--Registration*/
+  new JustValidate('.form--registration', {
     rules: {
       name: {
         required: true,

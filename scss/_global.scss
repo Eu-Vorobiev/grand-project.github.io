@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -13,7 +15,8 @@ body {
 }
 
 
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -24,7 +27,8 @@ img {
   height: inherit;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
 }
 
@@ -38,12 +42,14 @@ a {
   max-width: 1265px;
   padding: 0px 15px;
   margin: 0 auto;
+
   &--sm {
     width: 100%;
     max-width: 790px;
     margin: 0 auto;
     padding: 0px 15px;
   }
+
   &--no-padding {
     padding: 0;
   }
@@ -57,22 +63,28 @@ a {
   width: 47px;
   height: 48px;
   transition: all .3s ease-in-out;
+
   &--header {
     animation: fadeInLeft 1s ease-in-out normal forwards;
   }
+
   &--white {
     margin-bottom: 35px;
   }
+
   &__img {
+
     &:hover,
     &:focus {
       opacity: 0.7;
-    }    
+    }
   }
 }
 
 .js-validate-error-label {
   color: darken(red, 15%);
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .section__title {
@@ -80,21 +92,25 @@ a {
   font-style: normal;
   font-weight: 500;
   text-align: center;
+
   /* Цвета */
   &--blue {
     color: $blue;
   }
+
   &--black {
     color: $black;
   }
+
   /* Размеры */
   &--default {
     font-size: 24px;
     line-height: 29px;
   }
+
   &--lg {
     font-size: 28px;
-    line-height: 33px;  
+    line-height: 33px;
   }
 }
 
@@ -108,19 +124,23 @@ a {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+
   /* Цвета */
   &--black {
     color: $black;
   }
+
   &--blue {
     color: $blue;
   }
+
   /* Отступ */
   &--m-lg {
     text-align: left;
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 767px) and (min-width: 576px) {
   .section__suptitle {
     &--m-lg {
