@@ -183,7 +183,7 @@
 
         <div class="reviews__wrap">
           <!-- Reviews Wrap -->
-          <div class="section__heading reviews__heading">
+          <div class="section__heading reviews__heading" data-scroll>
             <h4 class="section__suptitle section__suptitle--blue section__suptitle--m-lg">Отзывы</h4>
             <h3 class="section__title section__title--blue section__title--lg">Что говорят студенты</h3>
           </div>
@@ -226,7 +226,7 @@
               <div class="slider__item">
                 <p class="slider__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
                   tractatos, vero tractatos ius an, in mel diceret persecuti. Eu usu vidit
-                  tractatos, vero tractatos ius an, in mel diceret persecuti. 
+                  tractatos, vero tractatos ius an, in mel diceret persecuti.
                 </p>
                 <img class="slider__author" src="img/user-photo.jpg" alt="Author photo">
               </div>
@@ -275,7 +275,7 @@
     <section class="faq-section">
       <div class="container--sm">
 
-        <div class="section__heading faq-section__heading">
+        <div class="section__heading faq-section__heading" data-scroll>
           <h4 class="section__suptitle section__suptitle--blue">FAQ</h4>
           <h3 class="section__title section__title--blue section__title--default">Список популярных вопросов</h3>
         </div>
@@ -318,6 +318,36 @@
 
       </div>
     </section> <!-- /. FAQ -->
+
+    <!-- Feedback -->
+    <section class="feedback">
+      <div class="container--sm">
+
+        <div class="section__heading faq-section__heading" data-scroll>
+          <h4 class="section__suptitle section__suptitle--blue">Feedback</h4>
+          <h3 class="section__title section__title--blue section__title--default">Напишите нам!</h3>
+          <p class="section__text">Оставьте свои контактные данные и наш консультант свяжется с Вами!</p>
+        </div>
+
+        <!-- Feedback Form -->
+        <form class="form form--feedback" action="#" method="POST">
+
+          <label class="form__label form__label--feedback" for="name">Имя</label>
+          <input class="form__input form__input--feedback" type="text" placeholder="Введите Ваше имя" minlength="2" maxlength="25" name="name" required>
+
+          <label class="form__label form__label--feedback" for="phone">Номер телефона</label>
+          <input class="form__input form__input--feedback" type="number" placeholder="Введите Ваш номер телефона" maxlength="11" name="phone" required>
+
+          <label class="form__label form__label--feedback" for="email">Почта</label>
+          <input class="form__input form__input--feedback" type="email" placeholder="Введите Вашу почту" name="email" required>
+
+          <div class="feedback__actions">
+            <button class="feedback__btn btn btn--default btn--green " type="submit">Отправить</button>
+          </div>
+
+        </form>  <!-- /. Feedback Form-->
+      </div>
+    </section>  <!-- /. Feddback-->
 
     <!-- Prices -->
     <section class="prices" id="prices">

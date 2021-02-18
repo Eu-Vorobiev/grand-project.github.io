@@ -1,0 +1,17 @@
+.feedback {
+  padding-bottom: 100px;
+  &__actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    transition: all .3s ease-in-out;
+    &:hover, 
+    &:focus {
+      background-color: lighten($accent, 10%);
+      border: 2px solid lighten($accent, 10%);
+      outline: lighten($accent, 10%);
+    }
+  }
+}
