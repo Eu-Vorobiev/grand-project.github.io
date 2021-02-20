@@ -37,6 +37,7 @@
       border: 1px solid $blue;
       border-radius: 8px;
       background: transparent;
+      transition: all .3s ease-in-out;
       &:hover, &:focus {
         border: 1px solid $accent;
         outline: none;

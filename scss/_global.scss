@@ -95,6 +95,18 @@ a {
   font-size: 14px;
 }
 
+.form__input--feedback.error {
+  border: 2px solid red;
+  background-color: $lightGrey;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
 .section__title {
   margin: 0;
   font-style: normal;

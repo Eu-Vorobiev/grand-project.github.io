@@ -330,16 +330,16 @@
         </div>
 
         <!-- Feedback Form -->
-        <form class="form form--feedback" action="#" method="POST">
+        <form class="form form--feedback validate" action="#" method="POST">
 
           <label class="form__label form__label--feedback" for="name">Имя</label>
-          <input class="form__input form__input--feedback" type="text" placeholder="Введите Ваше имя" minlength="2" maxlength="25" name="name" required>
+          <input class="form__input form__input--feedback" type="text" id="text" placeholder="Введите Ваше имя" minlength="2" maxlength="25" name="name" required>
 
           <label class="form__label form__label--feedback" for="phone">Номер телефона</label>
-          <input class="form__input form__input--feedback" type="number" placeholder="Введите Ваш номер телефона" maxlength="11" name="phone" required>
+          <input class="form__input form__input--feedback" type="tel" id="phone" placeholder="Введите Ваш номер телефона" minlength="10" maxlength="10" name="phone" pattern="\d([0-9]{10})" title="Используйте формат: 0995557722" required>
 
           <label class="form__label form__label--feedback" for="email">Почта</label>
-          <input class="form__input form__input--feedback" type="email" placeholder="Введите Вашу почту" name="email" required>
+          <input class="form__input form__input--feedback" type="email" id="email" placeholder="Введите Вашу почту" name="email" required>
 
           <div class="feedback__actions">
             <button class="feedback__btn btn btn--default btn--green " type="submit">Отправить</button>
