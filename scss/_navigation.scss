@@ -29,6 +29,7 @@
 }
 
 .mobile-nav {
+  height: 100vh;
   padding: 15px;
   background-color: $black;
   position: relative;
@@ -39,7 +40,7 @@
     flex-direction: column;
   }
   &__item {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     &:last-child {
       margin-bottom: 25px;
     }
@@ -47,8 +48,8 @@
   &__link {
     color: $white;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
     text-transform: capitalize;
     transition: all .2s ease-in-out;
     outline-color: transparent;
@@ -80,7 +81,8 @@
   display: none;
   padding: 9px 2px;
   background: none;
-  border: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
   cursor: pointer;
   transition: all .3s ease-in-out;
   &__item {
@@ -90,6 +92,7 @@
     font-size: 0;
     width: 30px;
     height: 2px;
+    transition: all .3s ease-in-out;
     position: relative;
     &::before {
       position: absolute;
@@ -111,8 +114,17 @@
     }
 
   }
-  &:hover {
-    opacity: 0.7;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent;
+    background: $accent;
+    outline: none;
+    .burger__item {
+      background-color: $white;
+      &::before, &::after {
+        background-color: inherit;
+      }
+    }
   }
 }
 
