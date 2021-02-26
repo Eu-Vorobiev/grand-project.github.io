@@ -1,6 +1,6 @@
 <?php
 	$name      = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
-	$username  = filter_var($_POST["username"], FILTER_SANITIZE_STRING);
+	$phone  = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
 	$email     = filter_var($_POST["email"], FILTER_SANITIZE_STRING);
 	$errors;
 
@@ -10,10 +10,10 @@
 		$userName = $name;
 	}
 
-	if (empty($userName)) {
-		$errors = "Please, enter Your Username";
+	if (empty($phone)) {
+		$errors = "Please, enter Your Phone";
 	} else {
-		$nickName = $username;
+		$phone = $phone;
 	}
 
 	if (empty($email)) {
@@ -27,7 +27,7 @@
 	$mailBody = "Регистрация нового пользователя\n"; 
 	$mailBody .= "Name: " . $userName . "\n";
 	$mailBody .= "Email: " . $userEmail . "\n";
-	$mailBody .= "Nickname: " . $nickName . "\n";
+	$mailBody .= "Phone: " . $phone . "\n";
 
 	if (mail($to, 'Регистрация нового пользователя', $mailBody)) {
 			$output = "ok";
